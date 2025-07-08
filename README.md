@@ -1,0 +1,5 @@
+![login](./.github/assets/login.png)
+![chat](./.github/assets/chat.png)
+![chat-sidebars-toggled](./.github/assets/chat-sidebars-toggled.png)
+![users](./.github/assets/users.png)
+![schools](./.github/assets/schools.png)
