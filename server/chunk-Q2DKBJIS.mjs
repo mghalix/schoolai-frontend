@@ -1,0 +1,1 @@
+import{Ca as c,Ka as i,S as o,V as l,W as d,f as n,ic as b,n as r,sa as s,za as u}from"./chunk-YDU4LTHN.mjs";n();s();b();l();d();function f(t){t||(c(f),t=u(i));let a=new r(e=>t.onDestroy(e.next.bind(e)));return e=>e.pipe(o(a))}export{f as a};
