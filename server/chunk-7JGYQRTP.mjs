@@ -1,1 +1,0 @@
-import{f as s,sa as o}from"./chunk-GGPU53VT.mjs";s();o();var O={LOGIN:"login",HOME:"",CHAT_ASSISTANT:"chat-assistant",USERS:"users",SCHOOLS:"schools",FACE_REPOSITORY:"face-repository",NOT_FOUND:"404"};export{O as a};
