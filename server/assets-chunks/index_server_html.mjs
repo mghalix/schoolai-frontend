@@ -7,10 +7,10 @@ export default `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
     <meta name="description" content="School AI - An intelligent school management system with AI integration"/>
-  <link rel="stylesheet" href="styles-6ZCQNOV5.css"></head>
+  <link rel="stylesheet" href="styles-K6TNXSD5.css"></head>
   <body><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
 </script>
     <app-root></app-root>
-  <link rel="modulepreload" href="chunk-RRP4N4GC.js"><link rel="modulepreload" href="chunk-QCZBZ6D4.js"><link rel="modulepreload" href="chunk-PRU6HH3N.js"><link rel="modulepreload" href="chunk-SNHCEMCN.js"><link rel="modulepreload" href="chunk-MBXGZBC2.js"><link rel="modulepreload" href="chunk-XWC3PN6U.js"><script src="main-JVFDNZH4.js" type="module"></script></body>
+  <link rel="modulepreload" href="chunk-3S5FN6OL.js"><link rel="modulepreload" href="chunk-DDBGJZYX.js"><link rel="modulepreload" href="chunk-J5UC4ELT.js"><link rel="modulepreload" href="chunk-CA7PTE6R.js"><link rel="modulepreload" href="chunk-PV7VIXPU.js"><link rel="modulepreload" href="chunk-X4HV7P3S.js"><link rel="modulepreload" href="chunk-Y2KGERLG.js"><link rel="modulepreload" href="chunk-L2Q7E4PU.js"><link rel="modulepreload" href="chunk-XHRKRXDA.js"><script src="main-3CFQKF64.js" type="module"></script></body>
 </html>
 `;
