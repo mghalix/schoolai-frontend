@@ -1,1 +1,0 @@
-import{f as s,sa as S}from"./chunk-YDU4LTHN.mjs";s();S();var t={LOGIN:"login",HOME:"",CHAT_ASSISTANT:"chat-assistant",USERS:"users",SCHOOLS:"schools",FACE_REPOSITORY:"face-repository",CONTACT:"contact",ACADEMIC_LEVEL:"academic-levels",STUDENTS:"students",SUBJECTS:"subjects",SOURCES:"sources",NOT_FOUND:"404"};export{t as a};
