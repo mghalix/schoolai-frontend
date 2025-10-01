@@ -1,0 +1,1 @@
+import{Aa as c,Ia as i,R as o,T as l,U as d,f as n,n as r,nc as b,qa as s,xa as u}from"./chunk-7DSKYCPA.mjs";n();s();b();l();d();function f(t){t||(c(f),t=u(i));let a=new r(e=>t.onDestroy(e.next.bind(e)));return e=>e.pipe(o(a))}export{f as a};
