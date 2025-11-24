@@ -2,5 +2,6 @@
   "ENVIRONMENTS_URLS": {
     "DEV_IP": "https://ca-schoolai-dev.mangoplant-3f3a7845.westeurope.azurecontainerapps.io/api"
   },
-  "BASE_ENVIRONMENT": "DEV_IP"
+  "BASE_ENVIRONMENT": "DEV_IP",
+  "MODE": "dev"
 }
