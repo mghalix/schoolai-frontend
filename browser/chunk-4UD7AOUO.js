@@ -1,1 +1,0 @@
-import{Jb as i,Kb as p,ec as a,mb as o}from"./chunk-ZQR6ISTC.js";var d=(()=>{let t=class t{};t.\u0275fac=function(n){return new(n||t)},t.\u0275cmp=o({type:t,selectors:[["app-not-found"]],decls:2,vars:0,template:function(n,m){n&1&&(i(0,"p"),a(1,"not-found"),p())},encapsulation:2});let e=t;return e})(),f=d;export{d as NotFoundComponent,f as default};

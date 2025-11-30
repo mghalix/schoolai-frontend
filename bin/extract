@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -e
+
+decompress() {
+    unzip "$@"
+}
+
+SCRIPT="$0"
+TARGET="$1"
+
+PRE_CLEAN=browser
+EXTRACTED_DIRNAME=school-ai
+
+if [[ -z "$TARGET" ]]; then
+    echo "Usage $SCRIPT <path_to_archive>"
+    exit 1
+fi
+
+decompress "$TARGET"
+
+rm -rf "$PRE_CLEAN"
+mv -f "$EXTRACTED_DIRNAME"/* .
+
+rmdir "$EXTRACTED_DIRNAME"
