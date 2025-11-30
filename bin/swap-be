@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+CONFIG="./browser/CONFIGURATIONS.json"
+LOCAL="http://localhost:8000/api"
+REMOTE="https://ca-schoolai-dev.mangoplant-3f3a7845.westeurope.azurecontainerapps.io/api"
+
+show_help() {
+    cat <<EOF
+Usage: swap-be [--local | --remote | --help]
+
+Toggles the UI backend between LOCAL and REMOTE URLs.
+With no flags, it automatically toggles based on current value.
+
+Flags:
+  --local     Force switch to localhost backend
+  --remote    Force switch to remote backend
+  --help      Show this help message
+
+Examples:
+  ./swap-be
+  ./swap-be --local
+  ./swap-be --remote
+EOF
+}
+
+force_mode="${1:-}"
+
+case "$force_mode" in
+    --help)
+        show_help
+        exit 0
+        ;;
+    --local|--remote|"")
+        ;;
+    *)
+        echo "😕 Unknown option: $force_mode"
+        echo "Run: ./swap-be --help"
+        exit 1
+        ;;
+esac
+
+current=$(jq -r '.ENVIRONMENTS_URLS.DEV_IP' "$CONFIG")
+swap_to=""
+
+if [[ "$force_mode" == "--local" ]]; then
+    swap_to="$LOCAL"
+elif [[ "$force_mode" == "--remote" ]]; then
+    swap_to="$REMOTE"
+else
+    # toggle mode
+    if [[ "$current" == "$LOCAL" ]]; then
+        swap_to="$REMOTE"
+    else
+        swap_to="$LOCAL"
+    fi
+fi
+
+jq --arg url "$swap_to" '.ENVIRONMENTS_URLS.DEV_IP = $url' "$CONFIG" > "${CONFIG}.tmp"
+mv "${CONFIG}.tmp" "$CONFIG"
+
+echo ""
+echo "🔄 Backend swapped!"
+echo "   OLD: $current"
+echo "   NEW: $swap_to"
+echo ""
+
+if [[ "$swap_to" == "$LOCAL" ]]; then
+    echo "🗸 Now using LOCAL backend"
+else
+    echo "🗸 Now Now using REMOTE backend"
+fi
+
+echo ""
