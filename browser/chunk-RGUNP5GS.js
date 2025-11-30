@@ -1,0 +1,1 @@
+import{a as n}from"./chunk-HHNH36YI.js";function p(l){return t=>{if(!t||!t.parent)return null;let a=t.parent.get([l]);if(!a)return null;let e=a.value,r=t.value;return e==="email"?n.EMAIL.test(r)?null:{pattern:!0}:e==="website"?n.WEBSITE.test(r)?null:{pattern:!0}:e==="phone"||e==="mobile"?n.PHONE.test(r)?null:{pattern:!0}:null}}export{p as a};
