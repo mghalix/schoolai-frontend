@@ -1,0 +1,1 @@
+import{Hb as n,Ib as i,dc as p,kb as o}from"./chunk-GJHG2PLR.js";var m=(()=>{class t{static{this.\u0275fac=function(e){return new(e||t)}}static{this.\u0275cmp=o({type:t,selectors:[["app-not-found"]],decls:2,vars:0,template:function(e,a){e&1&&(n(0,"p"),p(1,"not-found"),i())},encapsulation:2})}}return t})(),c=m;export{m as NotFoundComponent,c as default};
